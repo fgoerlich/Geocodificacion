@@ -22,7 +22,7 @@ xaringanExtra::use_tachyons()
 # Contexto...
 
 ```{r, echo = FALSE, eval = TRUE, fig.asp = 2/2, out.width = "100%", fig.align = "center"}
-knitr::include_graphics("./Geocodificacion_files/img/01_MonoFRA.jpg")
+knitr::include_graphics("./img/01_MonoFRA.jpg")
 ```
 
 <br>
@@ -57,7 +57,7 @@ Se trata también de ilustrar nuevas fuente de datos y tratamientos alternativos
 **No** georeferenciado
 
 ```{r, echo = FALSE, eval = TRUE, fig.asp = 2/2, out.width = "100%", fig.align = "center"}
-knitr::include_graphics("./Geocodificacion_files/img/02_NoGeo.jpg")
+knitr::include_graphics("./img/02_NoGeo.jpg")
 ```
 
 ]
@@ -68,7 +68,7 @@ knitr::include_graphics("./Geocodificacion_files/img/02_NoGeo.jpg")
 **Si** georeferenciado
 
 ```{r, echo = FALSE, eval = TRUE, fig.asp = 2/2, out.width = "100%", fig.align = "center"}
-knitr::include_graphics("./Geocodificacion_files/img/02_SiGeo.jpg")
+knitr::include_graphics("./img/02_SiGeo.jpg")
 ```
 
 ]
@@ -115,7 +115,7 @@ La información geográfica siempre está necesariamente ligada a un **Sistema d
 **Geográficos**
 
 ```{r, echo = FALSE, eval = TRUE, fig.asp = 2/2, out.width = "80%", fig.align = "center"}
-knitr::include_graphics("./Geocodificacion_files/img/vector_lonlat.png")
+knitr::include_graphics("./img/vector_lonlat.png")
 ```
 
 ]
@@ -126,7 +126,7 @@ knitr::include_graphics("./Geocodificacion_files/img/vector_lonlat.png")
 **Proyectados**
 
 ```{r, echo = FALSE, eval = TRUE, fig.asp = 2/2, out.width = "80%", fig.align = "center"}
-knitr::include_graphics("./Geocodificacion_files/img/vector_projected.png")
+knitr::include_graphics("./img/vector_projected.png")
 ```
 
 ]
@@ -518,7 +518,7 @@ Lo que cierra el proceso (iterativo) de georeferenciación.
 - La distribución final del origen de las coordenadas es
 
 ```{r, echo = FALSE, eval = TRUE, out.width = "40%", fig.align = "center"}
-knitr::include_graphics("./Geocodificacion_files/img/03_CoordenadasFuente.jpg")
+knitr::include_graphics("./img/03_CoordenadasFuente.jpg")
 ```
 
 
@@ -561,7 +561,7 @@ class: inverse, center, middle
 ### Para pintar oficinas en el mapa...
 
 ```{r echo = FALSE, out.width = "100%", fig.height = 6, eval = require("leaflet")}
-Oficinas <- sf::read_sf("./Geocodificacion_files/data/Oficinas2020geoIvie.gpkg") %>%
+Oficinas <- sf::read_sf("./data/Oficinas2020geoIvie.gpkg") %>%
   sf::st_transform(crs = 4326)
 leaflet(Oficinas) %>% addTiles() %>% setView(lng = -0.3559, lat = 39.4805, zoom = 18) %>%
   addMarkers(lng = -0.3559, lat = 39.4805, icon = IvieIcon) %>%
