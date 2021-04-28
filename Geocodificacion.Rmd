@@ -484,7 +484,7 @@ g_join <- st_as_sf(OficinasNO, coords = c('Longitud', 'Latitud'), crs = 4258) %>
 
 - Ello permitió corregir numerosos errores del fichero original del Banco de España<sup>*</sup>.
 
-- Rebajando la precisión de la coordenada devuelta por Cartociudad, `state = 6`, se geocodificó una oficina más.
+- Rebajando la precisión de la coordenada devuelta por Cartociudad, `state = 6`, se geocodificó 1 oficina más.
 
 ```{r, eval = FALSE}
 # 06Oficinas_Carto4.R
