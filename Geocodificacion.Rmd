@@ -107,7 +107,7 @@ leaflet() %>% addTiles() %>% setView(lng = -0.3559, lat = 39.4805, zoom = 18) %>
 
 # _CRS: Coordinate Reference Systems_
 
-La información geográfica siempre está necesariamente ligada a un **Sistema de Referencia de Coordeanadas (_CRS_)**. Hay básicamente 2 grupos de _CRS_.
+La información geográfica siempre está necesariamente ligada a un **Sistema de Referencia de Coordenadas (_CRS_)**. Hay básicamente 2 grupos de _CRS_.
 
 --
 
